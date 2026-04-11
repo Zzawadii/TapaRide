@@ -23,19 +23,10 @@ cd backend
 npm install
 ```
 
-3. Create `.env` file:
-```bash
-copy .env.example .env
-```
-
-4. Update `.env` with your MongoDB URI and JWT secret
-
 5. Start the server:
 ```bash
 npm run dev
 ```
-
-Backend API will run on http://localhost:5000
 
 ## API Endpoints
 
@@ -64,44 +55,4 @@ Backend API will run on http://localhost:5000
 - Role-based authorization
 - Token expiration (7 days default)
 
-## Testing with Postman or Thunder Client
 
-### 1. Register a new user
-- Method: POST
-- URL: `http://localhost:5000/api/auth/register`
-- Body (JSON):
-```json
-{
-  "name": "John Doe",
-  "email": "john@example.com",
-  "password": "password123",
-  "phone": "1234567890"
-}
-```
-
-### 2. Login
-- Method: POST
-- URL: `http://localhost:5000/api/auth/login`
-- Body (JSON):
-```json
-{
-  "email": "john@example.com",
-  "password": "password123"
-}
-```
-- Response will include a JWT token - copy this token
-
-### 3. Access protected route
-- Method: GET
-- URL: `http://localhost:5000/api/auth/me`
-- Headers:
-  - Key: `Authorization`
-  - Value: `Bearer YOUR_JWT_TOKEN`
-
-### 4. Test admin route
-- Method: GET
-- URL: `http://localhost:5000/api/bookings/all`
-- Headers:
-  - Key: `Authorization`
-  - Value: `Bearer YOUR_JWT_TOKEN`
-- Note: This will only work if the user has admin role
