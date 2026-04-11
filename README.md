@@ -55,4 +55,32 @@ npm run dev
 - Role-based authorization
 - Token expiration (7 days default)
 
+## Structure
+tapaRide/
+│
+├── backend/
+│   ├── config/
+│   │   └── db.js                    # MongoDB connection
+│   │
+│   ├── controllers/
+│   │   └── authController.js        # Register, login, getMe, updatePassword
+│   │
+│   ├── middleware/
+│   │   └── auth.js                  # JWT verification & role authorization
+│   │
+│   ├── models/
+│   │   └── User.js                  # User schema with bcrypt hashing
+│   │
+│   ├── routes/
+│   │   ├── authRoutes.js            # Auth endpoints
+│   │   └── bookingRoutes.js         # Protected booking endpoints
+│   │
+│   ├── node_modules/                # Dependencies
+│   │
+│   ├── .env.example                 # Environment variables template
+│   ├── package.json                 # Dependencies list
+│   ├── package-lock.json
+│   └── server.js                    # Express app entry point
+│
+└── README.md                        
 
