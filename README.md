@@ -22,6 +22,16 @@ cd backend
 ```bash
 npm install
 ```
+3. Configure environment variables
+Create a .env file in the backend folder:
+
+```bash
+PORT=5000
+MONGODB_URI=mongodb://localhost:27017/booking-app
+JWT_SECRET=your_secret_key
+JWT_EXPIRE=7d
+NODE_ENV=development
+```
 
 5. Start the server:
 ```bash
@@ -55,7 +65,8 @@ npm run dev
 - Role-based authorization
 - Token expiration (7 days default)
 
-## Structure
+## Project Structure
+```bash
 tapaRide/
 │
 ├── backend/
@@ -83,4 +94,4 @@ tapaRide/
 │   └── server.js                    # Express app entry point
 │
 └── README.md                        
-
+```
