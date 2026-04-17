@@ -144,3 +144,8 @@ Authorization: Bearer YOUR_TOKEN
 
 ---
 
+## 📌 Notes
+
+- Always run commands inside the `backend` folder
+- Ensure MongoDB is running before starting server
+- Keep `.env` file private (DO NOT push to GitHub)
