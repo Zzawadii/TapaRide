@@ -3,7 +3,15 @@
 Node.js/Express REST API for TapaRide with authentication, authorization, and booking system support.
 
 ---
+## 🚀 Features
 
+- Email/password authentication
+- JWT-based authentication
+- Password hashing with bcrypt
+- Role-based access control (User/Admin)
+- Protected routes using middleware
+- Booking system endpoints (demo-ready)
+- Secure API structure
 
 
 ---
