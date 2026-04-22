@@ -24,10 +24,7 @@ git clone https://github.com/Zzawadii/TapaRide.git
 cd TapaRide/backend
 ```
 
-### 2. Install dependencies
-```bash
-npm install
-```
+
 
 ### 3. Create environment file
 Create a `.env` file in the backend folder:
