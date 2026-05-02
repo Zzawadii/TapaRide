@@ -106,41 +106,6 @@ tapaRide/
     ├── .env.example
     ├── package.json
     └── server.js
-```
-
----
-
-## 🧪 Testing API
-
-Use Postman or Thunder Client:
-
-### Register
-```
-POST /api/auth/register
-
-{
-  "name": "John Doe",
-  "email": "john@example.com",
-  "password": "password123",
-  "phone": "1234567890"
-}
-```
-
-### Login
-```
-POST /api/auth/login
-
-{
-  "email": "john@example.com",
-  "password": "password123"
-}
-```
-
-Copy token and use:
-```
-Authorization: Bearer YOUR_TOKEN
-```
-
 ---
 ## 📌 Notes
 
