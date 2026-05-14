@@ -21,7 +21,7 @@ Node.js/Express REST API for TapaRide with authentication, authorization, and bo
 ```bash
 git clone https://github.com/Zzawadii/TapaRide.git
 cd TapaRide/backend
-``
+```
 
 ### 2. Install dependencies
 ```bash
