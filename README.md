@@ -1,7 +1,6 @@
 
 
 
-
 # TapaRide Backend API
 
 Node.js/Express REST API for TapaRide with authentication, authorization, and booking system support.
